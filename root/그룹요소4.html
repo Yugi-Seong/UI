@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap {
+            
+            width: 1024px;
+            height: 700px;
+            outline: 1px solid red;
+            margin : 0 auto ;
+        }
+        #header {
+            height: 100px;
+            background-color: yellow;
+        }
+        h1 {
+            height: 50px;
+        }
+        .nav {
+            width: 70%;
+            height: 25px;
+            background-color: tomato;
+            margin: 0 auto;
+        }
+        #container {
+            height: 500px;
+            background-color: aqua;
+        }
+        .section {
+            width: 35%;
+            height: 100%;
+            background-color: #ccc;
+            display: inline-block;
+        }
+        .article {
+            width: 35%;
+            height: 100%;
+            background-color: #999;
+            display: inline-block;
+        }
+        .aside { 
+            width: 28%;
+            height: 100%;
+            background-color: #555;
+            display: inline-block;
+        }
+        #footer {
+            height: 100px;
+            background-color: violet;
+        }
+        address {
+            width: 50%;
+            margin: 0 auto;
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <!-- h1과 div nav, address 는 컨텐츠 -->
+            <h1><img src="img/test/logo.png" alt="로고이미지"></h1>
+            <div class="nav"></div>
+        </div>
+        
+        <div id="container">
+            <div class="section"></div>
+            <div class="article"></div>
+            <div class="aside"></div>
+        </div>
+        
+        <div id="footer">
+            <address>부산시 부산진구 서전로 10번길 28</address>
+        </div>
+    </div>
+</body>
+</html>
