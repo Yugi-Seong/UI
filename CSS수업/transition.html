@@ -9,18 +9,37 @@
         .menu li {list-style-type: none;}
         .menu li a {
             display: block;
-            width: 10px;
+            width: 300px;
+            height: 20px;
             margin-bottom: 2px;
             background: #abc;
             text-indent: 10px;
-            transition: width 1s, color 1x;
+            /* transition: width 0.35s 0.35s, height 0.35s 0.35s, color 0.25s 0.7s background-color 0.25s 0.7s, border-radius 0.25s 0.7s ; */
             color: #000;
             text-decoration: none;
         }
+        
         .menu li a:hover {
             width: 450px;
+            height: 200px;
+            background-color: yellowgreen ;
             color: #c00;
+            border-radius : 0 100px 0 0 ;
+            animation : myani 1s ;
+            animation-fill-mode: forwards;
         }
+        @keyframes myani {
+            from {width: 300px;
+            height: 20px;
+            background-color: yellowgreen ;
+            border-radius: 0 0 0 0 ;
+            color: #c00;}
+            to { width: 450px;
+            height: 200px;
+            background-color: yellowgreen ;
+            border-radius: 0 100px 0 0 ;;
+            color: #c00; }
+        } 
     </style>
 </head>
 <body>
