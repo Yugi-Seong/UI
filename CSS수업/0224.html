@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /*테두리 범위까지 박스 사이즈로 하라*/
+        }
+        #wrap {
+            width: 1080px;
+            height: 800px;
+            border: 1px solid;
+            margin: 0 auto;
+        }
+        header {
+            width: 100%;
+            height: 150px;
+            border: 1px solid red;
+            background-color: aquamarine;
+        }
+        nav {
+            height: 50px;
+            background-color: violet;
+        }
+        #container {
+            width: 100%;
+            height: 500px;
+            border: 1px solid gray;
+            background-color: yellow;
+            position: relative; /* 이렇게 주게 되면 sideMenu부모를 컨테이너로 생각함*/
+            float: left;
+
+        }
+        #sideMenu {
+            width: 33.3%;
+            height: 100%;
+            background-color: magenta;
+            float: left;
+            position: absolute;
+            /* top: 0; */
+            left: 0; 
+        }
+        #content {
+            width: 33.3%;
+            height: 100%;
+            background-color: lime;
+            float: left;
+            position: absolute;
+            /* top: 0; */
+            left: 33.3%;
+            /* margin-left: 33.3%; */
+            
+        }
+        #banner {
+            width: 33.3%; 
+            height: 100%;  
+            background-color: gray;
+            float: right;
+            position: absolute;
+            /* top: 0; */
+            right: 0;
+        }
+        /* #container:after {
+            content: "";
+            display: block;
+            clear: both;
+        } */
+      
+        footer {
+            width: 100%;
+            height: 150px;
+            border: 1px solid;
+            background-color: green;
+            clear: both;
+        }
+        address {
+            height: 50px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <nav>navigation</nav>
+        </header>
+
+        <div id="container">
+            <div id="sideMenu">sideMenu</div>
+            <div id="content">content</div>
+            <div id="banner">banner</div>
+        </div>
+        
+        <footer>
+            <address>부산시 부산진구</address>
+        </footer>
+    </div>
+</body>
+</html>
