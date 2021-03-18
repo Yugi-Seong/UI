@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-float방식</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #wrap {
+            width: 1080px;
+            height: 800px;
+            /* border: 1px solid red; */
+        }
+        header {
+            width: 100%;
+            height: 150px;
+            background-color: royalblue;
+        }
+        .contents {
+            width: 100%;
+            height: 300px;
+            background-color:teal;
+        }
+        .content1 {
+            width:  360px;
+            height: 300px;
+            background-color: firebrick;
+            float: left;
+        }
+        .content2 {
+            width: 360px;
+            height: 300px;
+            background-color: gold;
+            float: left;
+
+        }
+        .content3 {
+            width: 360px;
+            height: 300px;
+            background-color:wheat;
+            float: right;
+        }
+        .sideMenu {
+            width: 100%;
+            height: 200px;
+            background-color: sienna;
+        }
+        footer {
+            width: 100%;
+            height: 150px;
+            background-color:green;
+        }
+        .contents:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>header</header>
+        <div class="contain">
+            <div class="contents">
+                <div class="content1">content1</div>
+                <div class="content2">content2</div>
+                <div class="content3">content3</div>
+            </div>
+        </div>
+        <div class="sideMenu">sideMenu</div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
