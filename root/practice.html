@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #wrap {
+            width: 1000px;
+            height: 800px;
+        }
+      header {
+          width: 100%;
+          height: 100px;
+          background-color: burlywood;
+      }
+      nav {
+          float: right;
+      }
+      ul {
+        border: 1px solid red ;
+        width: 300px;   
+        margin: 0 auto ; 
+      }
+      li {
+        border: 1px solid gray ;
+        display: inline-block;
+        list-style: none;
+        text-align: center;
+        height: 30px;
+        font-size: 15px;
+        line-height: 10px;
+        width: 50px;
+        color: white;
+      }
+      .contain {
+            width: 100%;
+            height: 300px;
+            background-color: cornflowerblue;
+      } 
+      .sideMenu1 {
+          
+            width: 333px;
+            height: 300px;
+            background-color: brown;
+            float: left;
+      }
+      .sideMenu2 {
+            width: 333px;
+            height: 300px;
+            background-color: burlywood;
+            float: left;
+      } 
+      .sideMenu3 {
+            width: 333px;
+            height: 300px;
+            background-color: aqua;
+            float: right;
+      } 
+      footer {
+          width: 100%;
+          height: 100px;
+          background-color: cadetblue;
+      }
+      address {
+        float: right;
+        border: 1px solid red ;
+            height: 50px;
+            font-size: 20px;
+
+            width: 500px;
+            color: white;
+      }
+      .sideMenus:after {
+          content: "";
+          display: block;
+          clear: both;
+      }
+      
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>header
+            <nav>
+                <ul>
+                    <li>home1</li>
+                    <li>home2</li>
+                    <li>home3</li>
+                    <li>home4</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contents">
+            <div class="contain">contain<br>
+                <img src="http://placehold.it/1000x300" alt="의미없는 이미지">
+
+            </div>
+            <div class= "sideMenus">
+                <div class="sideMenu1">본문A<br><br>
+                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the releas Ipsum.</p>
+                </div>
+                <div class="sideMenu2">본문A<br><br>
+                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining f Lorem Ipsum.</p>
+                </div>
+                <div class="sideMenu3">본문A<br><br>
+                    <p>is  1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            footer<br>
+            <address>부산시 부산시 부산시 부산시 </address>
+        </footer>
+
+    </div>
+</body>
+</html>
